@@ -4,9 +4,24 @@ body {
 
 /* TODO: Crear contenedores auto-ajustables */
 .container {
-    max-width: 90%;
-    width: 100%;
+    width: 96vw; /* vw: view width */
     margin: 0 auto;
+}
+
+@media ( min-width: 567px ) {
+    .container {
+        width: calc( 567px - 20px );
+    }
+}
+@media ( min-width: 768px ) {
+    .container {
+        width: calc( 768px - 30px );
+    }
+}
+@media ( min-width: 992px ) {
+    .container {
+        width: calc( 992px - 30px );
+    }
 }
 
 /* TODO: Usar :nth-child() para darle estilos a las secciones pares e impares */
