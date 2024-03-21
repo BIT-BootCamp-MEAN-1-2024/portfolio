@@ -19,6 +19,15 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+.nav-menu-main {
+    flex-basis: 80%;
+}
+
+.menu-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .menu-main,
 .menu-social {
     list-style: none;
