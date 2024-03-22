@@ -57,8 +57,33 @@ h1, h2, h3, h4, h5, h6 {
 .info-about-me {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 0;
 }
 
+.btn {
+    border: 1px solid #3F8E00;
+}
+
+.btn-green {
+    background-color: #3F8E00;
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    padding: .8rem;
+}
+
+.image-profile {
+    order: -1;
+}
+
+.image-juliana {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 /** Footer **/
 .footer {
@@ -70,6 +95,10 @@ h1, h2, h3, h4, h5, h6 {
 @media ( min-width: 567px ) {
     .container {
         width: calc( 567px - 20px );
+    }
+    .image-juliana {
+        width: 350px;
+        height: 350px;
     }
 }
 @media ( min-width: 768px ) {
