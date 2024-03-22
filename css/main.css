@@ -1,6 +1,8 @@
 body {
     box-sizing: border-box;
     font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,6 +64,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 25px 0;
 }
 
+.about-me {
+    flex-basis: 31rem;
+}
+.about-me p {    
+    padding: 0 2rem;
+}
+
 .btn {
     border: 1px solid #3F8E00;
 }
@@ -70,9 +79,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #3F8E00;
     display: block;
     width: 220px;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: .8rem;
-}
+    text-decoration: none;
+    color: white;
+} 
 
 .image-profile {
     order: -1;
@@ -97,13 +108,34 @@ h1, h2, h3, h4, h5, h6 {
         width: calc( 567px - 20px );
     }
     .image-juliana {
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
     }
+    .info-about-me {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        padding: 5rem;
+    }
+    .image-profile {
+        order: initial;
+    }
+    .btn-green {
+        margin: initial;
+    }
+    .about-me p {
+        padding: 0;
+    }
+    
+    
 }
 @media ( min-width: 768px ) {
     .container {
         width: calc( 768px - 30px );
+    }    
+    .image-juliana {
+        width: 350px;
+        height: 350px;
     }
 }
 @media ( min-width: 992px ) {
