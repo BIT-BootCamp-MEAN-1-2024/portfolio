@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;    
 }
 
 .nav-menu-main {
@@ -30,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu-main {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .menu-social {
@@ -107,6 +109,9 @@ h1, h2, h3, h4, h5, h6 {
     .container {
         width: calc( 567px - 20px );
     }
+    .header-container {
+        flex-direction: row;    
+    }
     .image-juliana {
         width: 250px;
         height: 250px;
@@ -126,8 +131,6 @@ h1, h2, h3, h4, h5, h6 {
     .about-me p {
         padding: 0;
     }
-    
-    
 }
 @media ( min-width: 768px ) {
     .container {
@@ -136,6 +139,9 @@ h1, h2, h3, h4, h5, h6 {
     .image-juliana {
         width: 350px;
         height: 350px;
+    }
+    .menu-main {
+        flex-direction: row;
     }
 }
 @media ( min-width: 992px ) {
