@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     text-align: center;
     padding: 25px 0;
+    height: 26rem;
 }
 
 .about-me {
@@ -98,6 +99,43 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
+.worked-with p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.brands {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: .5rem;
+    padding: 1.4rem 0;
+}
+
+.brand {
+    border: 1px solid #1B1B1B;
+    box-sizing: border-box;
+    height: 2rem;
+    display: block;
+    flex-basis: 25%;
+}   
+
+.brand-link {
+    display: flex;
+    justify-content: center;
+    padding: .4rem;
+}
+
+.brand-image {
+    width: 85px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+
 /** Footer **/
 .footer {
     background-color: #1B1B1B;
@@ -131,6 +169,9 @@ h1, h2, h3, h4, h5, h6 {
     .about-me p {
         padding: 0;
     }
+    .brand {
+        flex-basis: 19%;
+    } 
 }
 @media ( min-width: 768px ) {
     .container {
